@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.plMainPanel = new System.Windows.Forms.Panel();
-            this.tbInput = new System.Windows.Forms.TextBox();
-            this.lblInput = new System.Windows.Forms.Label();
-            this.lblMessage = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.lblInput = new System.Windows.Forms.Label();
+            this.tbInput = new System.Windows.Forms.TextBox();
             this.plMainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,13 +47,23 @@
             this.plMainPanel.Size = new System.Drawing.Size(426, 123);
             this.plMainPanel.TabIndex = 0;
             // 
-            // tbInput
+            // btnSubmit
             // 
-            this.tbInput.Location = new System.Drawing.Point(197, 37);
-            this.tbInput.Name = "tbInput";
-            this.tbInput.Size = new System.Drawing.Size(137, 20);
-            this.tbInput.TabIndex = 0;
-            
+            this.btnSubmit.Location = new System.Drawing.Point(340, 37);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 4;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(21, 63);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblMessage.TabIndex = 3;
             // 
             // lblInput
             // 
@@ -64,23 +74,12 @@
             this.lblInput.TabIndex = 2;
             this.lblInput.Text = "Enter a number between 1 and 20:";
             // 
-            // lblMessage
+            // tbInput
             // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(23, 57);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(0, 13);
-            this.lblMessage.TabIndex = 3;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Location = new System.Drawing.Point(340, 37);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmit.TabIndex = 4;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
+            this.tbInput.Location = new System.Drawing.Point(197, 37);
+            this.tbInput.Name = "tbInput";
+            this.tbInput.Size = new System.Drawing.Size(137, 20);
+            this.tbInput.TabIndex = 0;
             // 
             // Form
             // 
@@ -93,6 +92,7 @@
             this.plMainPanel.ResumeLayout(false);
             this.plMainPanel.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         #endregion
