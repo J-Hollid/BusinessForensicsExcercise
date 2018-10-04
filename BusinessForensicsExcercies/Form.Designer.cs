@@ -28,57 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.plMainPanel = new System.Windows.Forms.Panel();
+            this.tbInput = new System.Windows.Forms.TextBox();
+            this.lblInput = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.plMainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // plMainPanel
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(-1, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 241);
-            this.panel1.TabIndex = 0;
+            this.plMainPanel.Controls.Add(this.btnSubmit);
+            this.plMainPanel.Controls.Add(this.lblMessage);
+            this.plMainPanel.Controls.Add(this.lblInput);
+            this.plMainPanel.Controls.Add(this.tbInput);
+            this.plMainPanel.Location = new System.Drawing.Point(-1, 0);
+            this.plMainPanel.Name = "plMainPanel";
+            this.plMainPanel.Size = new System.Drawing.Size(426, 123);
+            this.plMainPanel.TabIndex = 0;
             // 
-            // textBox1
+            // tbInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbInput.Location = new System.Drawing.Point(197, 37);
+            this.tbInput.Name = "tbInput";
+            this.tbInput.Size = new System.Drawing.Size(137, 20);
+            this.tbInput.TabIndex = 0;
+            this.tbInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
+            // lblInput
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Guess a number:";
+            this.lblInput.AutoSize = true;
+            this.lblInput.Location = new System.Drawing.Point(20, 40);
+            this.lblInput.Name = "lblInput";
+            this.lblInput.Size = new System.Drawing.Size(171, 13);
+            this.lblInput.TabIndex = 2;
+            this.lblInput.Text = "Enter a number between 1 and 20:";
             // 
-            // Form1
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(23, 57);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblMessage.TabIndex = 3;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(340, 37);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 4;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            // 
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(437, 125);
+            this.Controls.Add(this.plMainPanel);
+            this.Name = "Form";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.plMainPanel.ResumeLayout(false);
+            this.plMainPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel plMainPanel;
+        private System.Windows.Forms.TextBox tbInput;
+        private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Label lblInput;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
 
