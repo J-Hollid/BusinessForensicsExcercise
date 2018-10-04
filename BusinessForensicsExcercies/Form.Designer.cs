@@ -53,7 +53,7 @@
             this.tbInput.Name = "tbInput";
             this.tbInput.Size = new System.Drawing.Size(137, 20);
             this.tbInput.TabIndex = 0;
-            this.tbInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // lblInput
             // 
@@ -80,6 +80,7 @@
             this.btnSubmit.TabIndex = 4;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // Form
             // 
@@ -92,7 +93,6 @@
             this.plMainPanel.ResumeLayout(false);
             this.plMainPanel.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion

@@ -17,9 +17,9 @@ namespace BusinessForensicsExcercies
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, System.EventArgs e)
         {
-
+            this.lblMessage.Text = "You clicked submit";  
         }
     }
 }
