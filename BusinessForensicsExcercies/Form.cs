@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BusinessForensicsExcercies
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
-        public Form1()
+        public Form()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
